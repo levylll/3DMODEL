@@ -225,7 +225,7 @@ THREE.STLLoader.prototype.parseASCII = function (data) {
 
 		while ( ( result = patternVertex.exec( text ) ) !== null ) {
 
-			geometry.vertices.push( new THREE.Vector3( parseFloat( result[ 1 ] ), parseFloat( result[ 3 ] ), parseFloat( result[ 5 ] ) ) );
+			geometry.vertices.push( new THREE.Vector3( parseFloat( result[ 1 ]*10 ), parseFloat( result[ 3 ]*10 ), parseFloat( result[ 5 ] )*10 ) );
 
 		}
 
